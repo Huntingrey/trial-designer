@@ -1,0 +1,205 @@
+/* Some General CSS for all selectors*/
+
+div, h1, h2, h3, img, li, p, section, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+section div {
+    display: block;
+}
+
+/*Emulating .psd guidelines*/
+.grid-container {
+    display: grid;
+    /*width: 1200px;*/
+    max-width: 100%;
+    /* grid-template-columns: 600px 600px;   <---- central guideline in .psd file (DON'T UNCOMMENT!!!)*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 486px 438px 197px;
+    margin-right: auto;
+    margin-left: auto;  
+}
+/*Sectioned the page into 3 parts, the first section consisting of the Header, Block1 and
+Block2 parts, as split in the .psd folder*/
+
+/*HEADER SECTION*/
+.header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: black;
+}
+section.header-hero {
+    padding: 0;
+    background: url(../images/xmas-image.jpg) 0px -20px no-repeat;
+    background-size: cover;
+    height: 486px;
+}
+/*HEADER TEXT*/
+.hero-caption {
+    padding-top: 65px;
+    max-width: 100%;
+    text-align: center;
+}
+/*BRANDSLOGO*/
+.hero-brand {
+    font-family: "ArialBold";
+    font-size: 29.92px;
+    line-height: 0.8em;
+    color: #fff;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.47);
+    margin-bottom: 82px;
+}
+/*GET YOUR FREE*/
+.hero-text1 {
+    font-family: "Verdana-Bold";
+    font-size: 50.07px;
+    line-height: 0.6em;
+    color: #fff;
+    text-transform: none;
+    margin-bottom: 15px;
+}
+/*IPSUM LOREM*/
+.hero-title {
+    font-family: "Verdana-Bold";
+    font-variant: bold;
+    font-size: 54.4px;
+    line-height: 0.8em;
+    color: #fff;
+    margin-bottom: 33px;
+    text-transform: none;
+}
+/*CHRISTMAS*/
+.hero-text2 {
+    font-family: "Verdana";
+    font-variant: normal;
+    font-size: 35.54px;
+    line-height: 0.8;
+    color: #88fea7;
+    margin-bottom: 10px;
+}
+/*PROMOTION*/
+.hero-text3 {
+    font-family: "Verdana";
+    font-variant: normal;
+    font-size: 35.54px;
+    line-height: 0.8;
+    color: #88fea7;
+    margin-bottom: 23px;
+    text-transform: none;
+}
+/* HEADER BRIGHT GREEN CTA BUTTON*/
+#rectangle1 {
+    width: 288px;
+    height: 53px;
+    background: #88fea7;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+/*GET YOURS NOW*/
+.cta-text1 {
+    text-align: center;
+    color: #000000;
+    font-family: "Verdana-Bold";
+    font-size: 23.76px;
+    line-height: 0.9;
+    text-transform: none;
+}
+
+/*BLOCK 1 - PLEASE NOTE!!!! Due to working with the guidlines and grid container I added "ONLY TODAY! 12 UNITS LEFT
+in this section for better sectioning with the grid container*/
+.block1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+section.block1-content {
+    margin-top: 
+    max-width: 100%;
+    text-align: center;
+}
+/* BLOCK1 -Text Part - all texts down below!*/
+/* CHOOSE ONE: */
+.block1-text1 {
+    font-family: "Verdana-Bold";
+    font-size: 23px;
+    line-height: 0.8;
+    margin-top: 58px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+/* ONLY TODAY! */
+.block1-text2 {
+    font-family: "Verdana";
+    font-size: 31px;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+/* 12 UNITS LEFT */
+.block1-text3 {
+    font-family: "Verdana-Bold";
+    font-size: 35px;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+/* Below is the box for the 3 units showing for sale */
+.popbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 50px;
+    margin-top: 39px;
+}
+/* ELEVEN */
+.eleven-image {
+    width: 95px;
+    height: 202px;
+    margin-left: 408px;
+}
+/* BARBS */
+.barbs-image {
+    width: 112px;
+    height: 209px;
+    margin-left: 44px;
+    margin-right: 26px;
+}
+/* MORTY */
+.morty-image {
+    width: 185px;
+    height: 185px;
+    margin-bottom: 15px;
+    margin-right: 329px;
+}
+
+/*Block2 Section*/
+.block2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+section.block2-footer {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 34px;
+}
+/* HEADER BRIGHT GREEN CTA BUTTON*/
+#rectangle2 {
+    display: flex;
+    width: 366px;
+    height: 62px;
+    background: #88fea7;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+} 
+/*GET YOURS NOW*/
+.cta-text2 {
+    text-align: center;
+    color: #000000;
+    font-family: "Verdana-Bold";
+    font-size: 28.29px;
+    line-height: 0.9;
+    text-transform: none;
+}
