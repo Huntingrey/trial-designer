@@ -116,7 +116,6 @@ in this section for better sectioning with the grid container*/
     grid-row-end: 3;
 }
 section.block1-content {
-    margin-top: 
     max-width: 100%;
     text-align: center;
 }
@@ -203,7 +202,8 @@ section.block2-footer {
     line-height: 0.9;
     text-transform: none;
 }
+/* HOVERS */
 .cta-text1:hover, .cta-text2:hover {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;    
 }
